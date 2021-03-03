@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.center{
+    border: 2px solid red;
+    padding: 5px;
+}
+.prc img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.clear::before,.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.prc{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+.txt{
+    float:left;
+    margin-left: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+.txt a{
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+    text-decoration: none;
+    background-color: saddlebrown;
+}

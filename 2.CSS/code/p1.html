@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常见选择器和样式</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            /* chrome浏览器：font-size最小值12px */
+            font-size: 20px;
+            color: aqua;
+            background-color: black;
+        }
+        /* 类选择器 */
+        .text{
+            text-align: center;
+            line-height: 30px;
+        }
+        img{
+            width: 400px;
+            /* auto和不设高度都会自动适应 */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <p class="text">hello css && html</p>
+    <img src="./back.jpg" alt="">
+</body>
+</html>
