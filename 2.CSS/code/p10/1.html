@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下拉菜单</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            list-style: none;
+        }
+        .menu>li{
+            float: left;
+            border: 1px solid bisque;
+            height: 30px;
+            width: 100px;
+            text-align: center;
+            line-height: 30px;
+        }
+        .sub-menu>li{
+            height: 0;
+            overflow: hidden;
+            color: brown;
+            border: 1px solid blueviolet;
+            box-sizing: border-box;
+            transition: height 0.5s;
+        }
+        .menu>li:hover >.sub-menu>li{
+            height: 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <ul class="menu">
+            <li>运动
+                <ul class="sub-menu">
+                    <li>篮球</li>
+                    <li>足球</li>
+                    <li>跳绳</li>
+                </ul>
+            </li>
+            <li>蔬菜
+                <ul class="sub-menu">
+                    <li>白菜</li>
+                    <li>萝卜</li>
+                    <li>土豆</li>
+                </ul>
+            </li>
+            <li>水果
+                <ul class="sub-menu">
+                    <li>苹果</li>
+                    <li>橘子</li>
+                    <li>梨</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

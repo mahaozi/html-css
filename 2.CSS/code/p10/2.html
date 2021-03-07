@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滚动菜单</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .meun>li{
+            list-style: none;
+            width: 100px;
+            height: 50px;
+            float: left;
+            overflow: hidden;
+        }
+        .show{
+            width: 100px;
+            height: 50px;
+            background-color: chocolate;
+            text-align: center;
+            line-height: 50px;
+            transition: margin 0.5s;
+        }
+        .click{
+            width: 100px;
+            height: 50px;
+            background-color: cornsilk;
+            text-align: center;
+            line-height: 50px;
+            overflow: hidden;
+            transition: margin 0.5s;
+        }
+        .meun>li:hover >.show{
+            margin-top: -50px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="meun">
+        <li>
+            <p class="show">花生</p>
+            <p class="click">peaunt</p>
+        </li>
+        <li>
+            <p class="show">乌鸦</p>
+            <p class="click">crow</p>
+        </li>
+        <li>
+            <p class="show">菜单</p>
+            <p class="click">menu</p>
+        </li>
+    </ul>
+</body>
+</html>
